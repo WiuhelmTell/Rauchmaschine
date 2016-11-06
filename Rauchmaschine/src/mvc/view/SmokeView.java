@@ -6,6 +6,7 @@ import javax.swing.JSlider;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeListener;
 
+
 public class SmokeView extends JFrame{
 
 	private static final long serialVersionUID = 1L;
@@ -24,12 +25,12 @@ public class SmokeView extends JFrame{
 
 	
     public SmokeView(){
-        super("SmokeView");
-
         initialize();
     }
     
 	private void initialize() {
+
+
 		this.setBounds(0, 0, 800, 480);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setUndecorated(true);
