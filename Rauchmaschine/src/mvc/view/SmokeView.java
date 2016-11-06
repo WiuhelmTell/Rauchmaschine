@@ -1,12 +1,9 @@
 package mvc.view;
 
-import java.awt.event.ActionListener;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
 import javax.swing.SwingConstants;
-import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 public class SmokeView extends JFrame{

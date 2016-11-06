@@ -57,7 +57,7 @@ public class SmokeController {
 					Double actualTemp = 0.0;
 					actualTemp = _model.getTemperatureFromVZ();
 					_view.setIstTemperatur(Double.toString(actualTemp));
-					_view.setHeizungswert(_model.ControllHeating(actualTemp,_view.getSollTemperatur()));
+					_view.setHeizungswert(_model.controllHeating(actualTemp,_view.getSollTemperatur()));
 				} catch (IOException | JSONException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

@@ -19,7 +19,7 @@ public class SmokeModel {
 	}
 	
 
-	public String ControllHeating(Double actualTemp,Integer soll){
+	public String controllHeating(Double actualTemp,Integer soll){
 		
 		String Regelwert = "nix";
 		
