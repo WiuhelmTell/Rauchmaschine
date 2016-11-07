@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package mvc.controller;
 
 import java.io.IOException;
@@ -35,9 +38,9 @@ public class SmokeController {
 		heatingControll.start();
 	}
 
-	/*
-	 * Listener
-	 * Schaut, ob sich der Regler der SollTemperaatur geändert hat und übergibt den neuen Wert an das view und das Model
+	
+	/**
+	 * 
 	 */
 	class SollTemperaturListener implements ChangeListener{
 		public void stateChanged(ChangeEvent e) {

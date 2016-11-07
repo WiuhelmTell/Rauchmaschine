@@ -19,23 +19,38 @@ public class SmokeModel {
 	}
 	
 
-	public String controllHeating(Double actualTemp,Integer soll){
+	/**
+	 * Controll heating.
+	 *
+	 * @param actualTemperature the actual temperature
+	 * @param desiredTemperature the desired temperature
+	 * @return regulation value
+	 */
+	public String controllHeating(Double actualTemperature,Integer desiredTemperature){
 		
-		String Regelwert = "nix";
+		String regulationValue = "nix";
 		
-		if((double) soll>actualTemp){
-			Regelwert = "Einschalten";
+		if((double) desiredTemperature>actualTemperature){
+			regulationValue = "Einschalten";
 		}
 		else{
-			Regelwert = "Ausschalten";
+			regulationValue = "Ausschalten";
 		}
 		
-		System.out.println(Regelwert);
+		System.out.println(regulationValue);
 
-		return Regelwert;
+		return regulationValue;
 		
 	}
 
+	/**
+	 * Gets the temperature from VZ.
+	 *
+	 * @return the temperature from VZ
+	 * @throws MalformedURLException the malformed URL exception
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 * @throws JSONException the JSON exception
+	 */
 	public Double getTemperatureFromVZ() throws MalformedURLException, IOException, JSONException{
 
 		String url = "http://vz.wiuhelmtell.ch/middleware.php/data/cabffab0-88a4-11e6-ac58-ebf10a5a3cb2.json";
